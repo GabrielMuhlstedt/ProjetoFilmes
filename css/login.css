@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    
+    background-image: url(../images/LoginBackgroundImage.jpeg);
+}
+
+.login-area{
+    background-color: #2E90FC;
+    width: 45%;
+    padding-left: 10%;
+    padding-bottom: 5%;
+}
+
+.input.area [type="button"]{
+    display: block;
+}
+
+.login-area .logo-login {
+    width: 204px;
+    height: 172px;   
+}
+
+/* logo 1 
+
+position: absolute;
+width: 204px;
+height: 172px;
+
+background: url(logo.jpg);
+
+*/
+
+
