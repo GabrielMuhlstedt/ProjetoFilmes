@@ -9,26 +9,51 @@
 </head>
 <body>
 
-    <div class="login-area">
+    <div id="login-area">
 
-        <img src="../images/logo.jpeg" class="logo-login">
-    
+        <img src="../images/logo.jpeg">
+
         <h1>Conecte-se</h1>
 
-        <form action="" class="input-area">
+        <form action="">
 
-            <input type="email" placeholder="Login" class="data-input">
-            <br>
-            <input type="password" placeholder="Senha" class="data-input">
-            <br>
-            <input type="button" value="Esqueci minha senha">
-            <br>
-            <input type="submit" value="Conectar">
+            <div class="input-area">
+
+                <div class="input-box">
+
+                    <input type="text" placeholder="Login">
+                    
+                </div>
+
+                <div class="input-box">
+
+                    <input type="password" placeholder="Senha">
+
+                </div>
+            
+           
+
+                <div id="esqueci-senha">
+
+                   <a href="#">Esqueci minha senha</a>
+
+                </div>
+
+            
+
+                <div class="btn-box">
+
+                    <input type="submit" value="Entrar">
+
+                </div>
+
+            </div>
 
         </form>
 
-        <p>Ainda não possui um Cadastro?</p>
-        <a href="#">Cadastre-se</a>
+        <div id="nao-possui-conta">
+            <p>Não possui uma conta? <br> <a href="#">Cadastre-se</a></p>
+        </div>
 
     </div>
 

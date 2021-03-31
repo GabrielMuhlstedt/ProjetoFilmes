@@ -1,40 +1,36 @@
 body {
-    background: url(../images/LoginBackgroundImage.jpeg) no-repeat fixed center;
+
+    font-family: Roboto;
+    background: url(../images/CadastroBackgroundImage.jpeg) no-repeat fixed center;
     background-size: cover;
+    padding-top: 2vh
 }
 
-#login-area {
+#cadastro-area {
     background: #2E90FC;
-    max-width: 400px;
+    max-width: 620px;
     min-width: 300px;
     text-align: center;
-    margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2vh;
     padding-top: 1vh;
 }
 
-#login-area img {
+#cadastro-area img {
     width: 30%;
 }
 
-
-#login-area h1 {
+#cadastro-area h1 {
     color: #DCE4FF;
     margin: 0;
     font-size: 25px;
 }
 
-.input-area {
+.cadastro-metade {
     display: inline-block;
     margin: 5%;
-    width: 55%;
-}
-
-.input-area input {
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
+    width: 35%;
 }
 
 .input-box input{
@@ -46,19 +42,17 @@ body {
     font-size: 14px;
 }
 
-#esqueci-senha {
-    width: 70%;
-    background: #166AB7;
-    padding: 1.5%;
-}
-
-.btn-box input{
-    width: 100%;
+#btn-box input{
+    width: 90%;
     background-color: #DCE4FF;
     color: #8AAEF4;
     padding: 1%;
     border-radius: 2px;
     border: none;
     font-size: 20px;
-    
+}
+
+#possui-conta {
+    text-align: left;
+    padding-left: 4.5vh;
 }
