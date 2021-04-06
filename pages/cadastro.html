@@ -1,3 +1,8 @@
+<?php
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +24,16 @@
         <img src="../images/logo.jpeg" alt="">
 
         <h1>Embarque em inúmeras aventuras</h1>
+        <?php
+        if(isset($_SESSION['msg']))
+          echo $_SESSION['msg'];
+          unset($_SESSION['msg']);
+        }
+        ?>
+        <form method="POST" action="../php/processa.php">
 
-        <form method="POST">
 
 
-          
             <div class="cadastro-metade">
 
                 <div class="input-box">
@@ -31,7 +41,7 @@
                 </div>
 
                 <div class="input-box">
-                    <input type="text" name="data_nascimento" id ="data_nascimento" placeholder="Data de Nascimento DD/MM/AAAA" required maxlength="10">
+                    <input type="text" name="dataNascimento" id ="data_nascimento" placeholder="Data de Nascimento DD/MM/AAAA" required maxlength="10">
                 </div>
 
                 <div class="input-box">
@@ -73,8 +83,10 @@
                 </div>
 
             </div>
-          
+
             <div id="btn-box">
+
+                <button type="button" name="" id =""></button>
                 <input type="submit" name="" id="">
             </div>
 

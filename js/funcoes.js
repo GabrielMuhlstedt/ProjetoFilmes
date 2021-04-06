@@ -11,8 +11,6 @@ function fHashSenha(){
   var senha_hash_md5 = $.MD5($('#senhaHash').val());
   $("#senhaHash").val(senha_hash_md5);
 
-
-
 }
 
 
@@ -20,7 +18,6 @@ function fLocalEventosClick(){
   $("#bGravar").click(function(){
 
     fHashSenha($("#senhaHash").val());
-    fLocalComunicaServidor("inserir");
 
     return false;
 
