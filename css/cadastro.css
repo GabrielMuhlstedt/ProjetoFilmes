@@ -9,7 +9,7 @@ body {
 #cadastro-area {
     background: #2E90FC;
     max-width: 620px;
-    min-width: 300px;
+    min-width: 250px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -38,9 +38,10 @@ body {
     background-color: #8AAEF4;
     margin-bottom: 10px; 
     border: none;
-    padding: 1.5%;
-    font-size: 14px;
+    padding: 2%;
+    font-size: 13px;
 }
+
 
 #btn-box input{
     width: 90%;
