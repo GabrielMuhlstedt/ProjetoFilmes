@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/funcoes.js"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/sjcl.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +13,7 @@
     <link rel="stylesheet" href="../css/cadastro.css">
 </head>
 <body>
-    
+
    <div id="cadastro-area">
 
         <img src="../images/logo.jpeg" alt="">
@@ -16,57 +21,61 @@
         <h1>Embarque em inúmeras aventuras</h1>
 
         <form action="">
-            
+
+
+          <form>
             <div class="cadastro-metade">
-        
+
                 <div class="input-box">
-                    <input type="text" placeholder="Nome"> 
+                    <input type="text" name="nome" id ="nome" placeholder="Nome">
                 </div>
 
                 <div class="input-box">
-                    <input type="date" placeholder="Date de Nascimento DD/MM/AAAA"> 
+                    <input type="date" name="data_nascimento" id ="data_nascimento" placeholder="Date de Nascimento DD/MM/AAAA">
                 </div>
 
                 <div class="input-box">
-                    <input type="email" placeholder="Email"> 
+                    <input type="email" name="email" id ="email" placeholder="Email">
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Senha"> 
+                    <input type="password" name="senha" placeholder="Senha">
                 </div>
 
                 <div class="input-box">
-                    <input type="password" placeholder="Confirmar Senha"> 
+                    <input type="password" placeholder="Confirmar Senha">
                 </div>
+
+                <input type="hidden" name="senhaHash" id="senhaHash" value="">
 
             </div>
 
             <div class="cadastro-metade">
 
                 <div class="input-box">
-                    <input type="text" placeholder="Número do Cartão"> 
+                    <input type="text" name="numCartao" id ="numCartao" placeholder="Número do Cartão">
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Validade do Cartão MM/AA"> 
+                    <input type="text" name="valCartao" id ="valCartao" placeholder="Validade do Cartão MM/AA">
                 </div>
 
                 <div class="input-box">
-                    <input type="number" placeholder="Código de Segurança"> 
+                    <input type="number" name="codSeg" id ="codSeg" placeholder="Código de Segurança">
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="Nome do Titular"> 
+                    <input type="text" name="nomeTitular" id ="nomeTitular" placeholder="Nome do Titular">
                 </div>
 
                 <div class="input-box">
-                    <input type="text" placeholder="CPF/CNPJ"> 
+                    <input type="text" name="cpfCnpj" id ="cpfCnpj" placeholder="CPF/CNPJ">
                 </div>
-                
+
             </div>
-
+          </form>
             <div id="btn-box">
-                <input type="submit" value="Cadastrar">
+                <button id="bGravar"> Cadastrar </button>
             </div>
 
         </form>
