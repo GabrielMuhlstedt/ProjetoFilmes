@@ -21,7 +21,7 @@ if(mysqli_insert_id($conn)){
   $_SESSION['msg'] = "<p style='color:green;'> Usuario cadastrado com sucesso </p>";
   header("Location: ../pages/cadastro.html");
 }else {
-  $_SESSION['msg'] = "<p style='color:red;'> Usuario nao foi cadastrado com sucesso </p>";
+  $_SESSION['msg'] = "<p style='color:red;'> Usuario nao foi cadastrado com sucesso </p>";//fazer Alert
   header("Location: ../pages/cadastro.html");
 }
 

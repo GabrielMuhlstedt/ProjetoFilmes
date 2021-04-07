@@ -1,13 +1,8 @@
-<?php
-session_start();
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/funcoes.js"></script>
+    <script type="text/javascript" src="../js/funcoesCadastro.js"></script>
     <script type="text/javascript" src="../js/jquery.md5.js"></script>
     <script type="text/javascript" src="../js/sjcl.js"></script>
 
@@ -24,15 +19,8 @@ session_start();
         <img src="../images/logo.jpeg" alt="">
 
         <h1>Embarque em inúmeras aventuras</h1>
-        <?php
-        if(isset($_SESSION['msg']))
-          echo $_SESSION['msg'];
-          unset($_SESSION['msg']);
-        }
-        ?>
+
         <form method="POST" action="../php/processa.php">
-
-
 
             <div class="cadastro-metade">
 
