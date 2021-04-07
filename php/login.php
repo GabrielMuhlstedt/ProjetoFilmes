@@ -12,6 +12,5 @@
   }else{
     echo json_encode("s");
   }
-
   mysqli_close($conexao);
  ?>

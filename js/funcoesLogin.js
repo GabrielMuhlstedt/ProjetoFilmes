@@ -21,9 +21,10 @@ $(document).ready(function(){
         email: $('#email').val(),
         senha: senha_hash.toString(),
       },
-      sucess: function(retorno){
+      success: function(retorno){
         if (retorno == "s"){
           alert("Usuario Logou");
+          window.location.href = "../pages/main.html"
         }else{
           alert("Erro no Login!");
         }
