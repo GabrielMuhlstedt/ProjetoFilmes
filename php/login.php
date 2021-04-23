@@ -1,16 +1,29 @@
 <?php
-  $conexao = mysqli_connect("localhost", "root", "", "projetofilmes");
+  require "conexao.php";
 
   $email = $_POST["email"];
-  $senha = $_POST["senha"];
+  $senha = $_POST["senha_hash"];
 
-  $resultado = mysqli_query($conexao, "SELECT * FROM pessoa WHERE email= '$email' and senha = '$senha'");
+  $resultado = mysqli_query($conexao, "SELECT * FROM pessoa WHERE email= '$email' AND senha = '$senha'");
   $resultadoRow = mysqli_num_rows($resultado);
 
   if($resultadoRow == false){
-    echo json_encode("n");
+    $retorno["status"] = "n";
+    $retorno["mensagem"] = "Usuario não cadastrado ou erro no login";
+    $retorno["funcao"] = "login";
   }else{
-    echo json_encode("s");
+    $resultado2 = mysqli_query($conexao, "SELECT verificado FROM pessoa WHERE email= '$email');
+    if($resultado2 == 's'){
+      $retorno["status"] = "s";
+      $retorno["mensagem"] = "Usuario Logado com sucesso";
+      $retorno["funcao"] = "login";
+    }else{
+      $retorno["status"] = "n";
+      $retorno["mensagem"] = "Verificação email não realizada";
+      $retorno["funcao"] = "login";
+    }
   }
-  mysqli_close($conexao);
+
+	echo json_encode($retorno);
+
  ?>

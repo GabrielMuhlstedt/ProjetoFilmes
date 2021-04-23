@@ -1,8 +1,11 @@
 <?php
 
-$servidor = "localhost:3306";
-$usuario = "root";
-$senha = "";
-$dbname= "projetofilmes";
+	define("ENDERECO", "localhost");
+	define("PORTA", "3306");
+	define("BANCO", "projetofilmes");
+	define("USUARIO_MYSQL", "root");
+	define("SENHA_MYSQL", "");
 
-$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+	$conexao = mysqli_connect(ENDERECO.":".PORTA, USUARIO_MYSQL, SENHA_MYSQL, BANCO);
+
+?>

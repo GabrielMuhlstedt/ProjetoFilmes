@@ -20,7 +20,7 @@
 
         <h1>Embarque em inúmeras aventuras</h1>
 
-        <form method="POST" action="../php/processa.php">
+        <form id = "form-cadastro">
 
             <div class="cadastro-metade">
 
@@ -38,14 +38,12 @@
 
                 <div class="input-box">
                     <input type="password" name="senha" placeholder="Senha" required maxlength="30">
+                    <input type="hidden" name="senha_hash" id="senha_hash" />
                 </div>
 
                 <div class="input-box">
                     <input type="password" placeholder="Confirmar Senha" required maxlength="30">
                 </div>
-
-                <input type="hidden" name="senhaHash" id="senhaHash" value="">
-
             </div>
 
             <div class="cadastro-metade">
@@ -74,8 +72,7 @@
 
             <div id="btn-box">
 
-                <button type="button" name="" id =""></button>
-                <input type="submit" name="" id="">
+                <button type="button" name="bGravar" id ="bGravar"></button>
             </div>
 
         </form>
