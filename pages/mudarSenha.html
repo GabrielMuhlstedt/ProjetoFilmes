@@ -1,0 +1,26 @@
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/funcoesMudarSenha.js"></script>
+    <script type="text/javascript" src="../js/jquery.md5.js"></script>
+    <script type="text/javascript" src="../js/sjcl.js"></script>
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form>
+      <div class="input-box">
+          <input type="password" name="senha" id="senha"placeholder="Digite sua nova senha" required maxlength="30">
+          <!--<input type="hidden" name="senha_hash" id="senha_hash" />-->
+      </div>
+
+      <div class="input-box">
+          <input type="password" placeholder="Confirmar Senha" required maxlength="30">
+      </div>
+
+      <input type="text" id ="tokenSenha" name="tokenSenha" placeholder="Digite seu token de recuperação">
+    </form>
+      <button type="button" name="bSenha" id ="bSenha"></button>
+  </body>
+</html>

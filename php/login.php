@@ -2,28 +2,19 @@
   require "conexao.php";
 
   $email = $_POST["email"];
-  $senha = $_POST["senha_hash"];
+  $senha = $_POST["senha"];
 
-  $resultado = mysqli_query($conexao, "SELECT * FROM pessoa WHERE email= '$email' AND senha = '$senha'");
+  $resultado = mysqli_query($conexao, "SELECT * FROM pessoa WHERE email= '$email' AND senha = '$senha' and verificado = 's'");
   $resultadoRow = mysqli_num_rows($resultado);
 
   if($resultadoRow == false){
     $retorno["status"] = "n";
-    $retorno["mensagem"] = "Usuario não cadastrado ou erro no login";
+    $retorno["mensagem"] = "Usuario não cadastrado, Erro no login ou Email não verificado(cheque seu email)";
     $retorno["funcao"] = "login";
   }else{
-    $resultado2 = mysqli_query($conexao, "SELECT verificado FROM pessoa WHERE email= '$email');
-    if($resultado2 == 's'){
-      $retorno["status"] = "s";
-      $retorno["mensagem"] = "Usuario Logado com sucesso";
-      $retorno["funcao"] = "login";
-    }else{
-      $retorno["status"] = "n";
-      $retorno["mensagem"] = "Verificação email não realizada";
-      $retorno["funcao"] = "login";
-    }
+    $retorno["status"] = "s";
+    $retorno["mensagem"] = "Usuario Logado com sucesso";
+    $retorno["funcao"] = "login";
   }
-
 	echo json_encode($retorno);
-
  ?>

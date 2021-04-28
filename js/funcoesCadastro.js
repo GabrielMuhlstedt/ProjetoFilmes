@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
 
-  	$("#bGravar").click(function(){
-        fHashSenha($("#senha_hash").val());
-        gerarToken()
+  	$("#bCadastrar").click(function(){
+        gerarToken();
+        hashMD5();
         fLocalComunicaServidor();
         fLocalEnviaEmail();
 
@@ -19,15 +19,14 @@ function gerarToken(){
   return token;
 }
 
-
-function fHashSenha(){
-
-  var senha_hash_md5 = $.MD5($('#senha_hash').val());
-  $("#senha_hash").val(senha_hash_md5);
-
+function hashMD5(){
+   var senha = $.MD5($('#senha').val());
+   return(senha);
 }
 
 function fLocalComunicaServidor(){
+
+  var senha_hash = hashMD5();
 
 	$.ajax({
 		type:"POST",
@@ -37,7 +36,7 @@ function fLocalComunicaServidor(){
         nomePessoa: $('#nome').val(),
         dataNascimento: $('#data_nascimento').val(),
         email: $('#email').val(),
-        senha: $('#senha_hash').val(),
+        senha: senha_hash.toString(),
         numCartao: $('#numCartao').val(),
         valCartao: $('#valCartao').val(),
         codSeg: $('#codSeg').val(),
@@ -45,23 +44,22 @@ function fLocalComunicaServidor(){
         cpfCnpj: $('#cpfCnpj').val(),
         tokenVer: token.toString(),
     },
-		success: function(retorno){
+		success: function(retorno2){
 
-			if(retorno.funcao == "cadastro")
+			if(retorno2.funcao == "cadastro")
 			{
-				if(retorno.status == "s")
+				if(retorno2.status == "s")
 				{
-					alert(retorno.mensagem);
+					alert(retorno2.mensagem);
 				}
 				else
 				{
-					alert(retorno.mensagem);
+					alert(retorno2.mensagem);
 				}
 			}
 		}
 
 	});
-
 }
 
 
@@ -78,5 +76,3 @@ function fLocalEnviaEmail(){
     }
   });
 }
-
-//window.location.href = "../index.html";

@@ -13,6 +13,7 @@
   $tokenVer = $_POST["tokenVer"];
 
 
+
   $result_usuario = "INSERT INTO pessoa (nomePessoa, dataNascimento, email, senha, numCartao, valCartao, codSeg, nomeTitular, cpfCnpj, tokenVer) VALUES('$nome', '$dataNascimento', '$email', '$senha', '$numCartao', '$valCartao', '$codSeg', '$nomeTitular', '$cpfCnpj','$tokenVer')";
   $resultado_usuario = mysqli_query($conexao, $result_usuario);
 

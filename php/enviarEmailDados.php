@@ -3,11 +3,11 @@
 date_default_timezone_set('Etc/UTC');
 
 $email = $_POST["email"];
-$tokenVer = $_POST["tokenVer"];
+$tokenCar = $_POST["tokenCar"];
 
 require '../PHPMailer/PHPMailerAutoload.php';
 
-$tituloEmail =  "Confirmação de Cadastro";
+$tituloEmail =  "Mudança Dados";
 
 $message = "<!DOCTYPE html>
 <html lang='en'>
@@ -20,9 +20,9 @@ $message = "<!DOCTYPE html>
   <div id='email' value='$email' hidden>
   </div>
   <div>
-    <a>Seu token é: '$tokenVer'</a>
+    <a>Seu token é: '$tokenCar'</a>
   </div>
-  <a>Para continuar o cadastro, clique<a href='http://localhost/ProjetoFilmes/pages/confirmarEmail.html'> aqui</a>. </a>
+  <a>Para continuar a mudança, clique<a href='http://localhost/ProjetoFilmes/pages/mudarDadosCartao.html'> aqui</a>. </a>
 
 
   </body>
@@ -46,8 +46,8 @@ $mail->msgHTML($message);
 $mail->send();
 
 $retorno2["status"] = "s";
-$retorno2["mensagem"] = "Email Enviado para confirmação.";
-$retorno["funcao"] = "recuperar";
+$retorno2["mensagem"] = "Email Enviado para atualizar seus dados.";
+$retorno2["funcao"] = "mudar";
 echo json_encode($retorno2);
 
  ?>

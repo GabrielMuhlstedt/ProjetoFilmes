@@ -1,31 +1,31 @@
 $(document).ready(function(){
   $('#bLogar').click(function(){
-
-    fHashSenha($("#senha_hash").val());
-		fLocalComunicaServidor('form-login', 'login')
+    hashMD5();
+		fLocalComunicaServidor()
 
 		return false;
   })
 });
 
 
-function fHashSenha(){
-
-  var senha_hash_md5 = $.MD5($('#senha_hash').val());
-  $("#senha_hash").val(senha_hash_md5);
-
+function hashMD5(){
+   var senha = $.MD5($('#senha').val());
+   return(senha);
 }
 
 
-function fLocalComunicaServidor(formulario, arquivo){
+function fLocalComunicaServidor(){
 
-	var dados = $("#"+formulario).serialize();
+  var senha_hash = hashMD5();
 
 	$.ajax({
 		type:"POST",
 		dataType: "json",
-		url: "../php/"+arquivo+".php",
-		data: dados,
+		url: "../php/login.php",
+		data:{
+        email: $('#email').val(),
+        senha: senha_hash.toString(),
+    },
 		success: function(retorno){
 
 			if(retorno.funcao == "login")
