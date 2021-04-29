@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imagem {
+    display: flex;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmeAcao {
+    background: url(../imagens/backgroundFilmeAcao.jpg) no-repeat fixed center;
+    background-size: cover;
+    
+}
+
+.filmeDrama {
+    background-image: url(../imagens/backgroundFilmeDrama.jpg);
+   
+}
+
+.filmeRomance {
+    background-image: url(../imagens/backgroundFilmeRomance.jpg);
+    
+}
+
+.filmeComedia {
+    background-image: url(../imagens/backgroundFilmeComedia.jpg);
+    
+}
+
+.filmeHerois {
+    background-image: url(../imagens/backgroundFilmeHerois.jpeg);
+    
+}
+
+.filmeFantasia {
+    background-image: url(../imagens/backgroundFilmeFantasia.jpg) ;
+    
+}
+
+.titulo-genero{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    color: blue;
+    font-size: 25px;
+    padding: 18px;
+    letter-spacing: 5px;
+    border-radius: 35%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.lista-filmes {
+    background: rgba(59, 144, 255, 0.918);
+    height: 50vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-filmes .filme{
+   display: inline;
+   margin: auto 1.6vw;
+    overflow: hidden;
+}
+
+.lista-filmes .filme img{
+    height: 38vh;
+    max-width: 20vw;
+    min-width: 12vw;
+}

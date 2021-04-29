@@ -33,7 +33,7 @@ function fLocalComunicaServidor(){
 				if(retorno.status == "s")
 				{
 					alert(retorno.mensagem);
-					window.location.href = "../pages/main.html";
+					window.location.href = "../pages/main/index.html";
 				}
 				else
 				{

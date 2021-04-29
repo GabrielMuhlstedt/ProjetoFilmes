@@ -44,24 +44,25 @@ function fLocalComunicaServidor(){
         cpfCnpj: $('#cpfCnpj').val(),
         tokenVer: token.toString(),
     },
-		success: function(retorno2){
+		success: function(retorno){
 
-			if(retorno2.funcao == "cadastro")
+			if(retorno.funcao == "cadastrar")
 			{
-				if(retorno2.status == "s")
+				if(retorno.status == "s")
 				{
-					alert(retorno2.mensagem);
+					alert(retorno.mensagem);
+          window.location.href = "../pages/login.html";
 				}
 				else
 				{
-					alert(retorno2.mensagem);
+					alert(retorno.mensagem);
+          window.location.href = "../pages/cadastro.html";
 				}
 			}
 		}
 
 	});
 }
-
 
 function fLocalEnviaEmail(){
   $.ajax({
@@ -73,6 +74,17 @@ function fLocalEnviaEmail(){
       tokenVer: token.toString(),
     },
     success:function(retorno2){
+      if(retorn2o.funcao == "cadastrar")
+      {
+        if(retorno2.status == "s")
+        {
+          window.location.href = "../pages/login.html";
+        }
+        else
+        {
+          alert(retorno2.mensagem);
+        }
+      }
     }
   });
 }

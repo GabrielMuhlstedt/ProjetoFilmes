@@ -15,12 +15,12 @@
   if($resultadoRow == false){
     $retorno["status"] = "n";
     $retorno["mensagem"] = "Token invalido!";
-    $retorno["funcao"] = "mudarDadosCartao";
+    $retorno["funcao"] = "Cartao";
   }else{
     $resultado = mysqli_query($conexao, "UPDATE pessoa SET numCartao = '$numCartao' , valCartao = '$valCartao' , codSeg = '$codSeg' , nomeTitular = '$nomeTitular' WHERE tokenCar= '$tokenCar'");
     $retorno["status"] = "s";
     $retorno["mensagem"] = "Dados atualizados com sucesso.";
-    $retorno["funcao"] = "mudarDadosCartao";
+    $retorno["funcao"] = "Cartao";
   }
   echo json_encode($retorno);
 

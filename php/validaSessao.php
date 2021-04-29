@@ -26,7 +26,7 @@
 
 		if($segundos > $_SESSION["tempolimite"])
 		{
-			unset($_SESSION["usuario"]);
+			unset($_SESSION["email"]);
 			unset($_SESSION["inicio"]);
 			unset($_SESSION["tempolimite"]);
 			unset($_SESSION["id"]);
@@ -48,7 +48,6 @@
 			$retorno["mensagem"] = "Sessao Renovada";
 			$retorno["funcao"] = "valida-sessao";
 
-			print_r($_SESSION);
 		}
 	}
 

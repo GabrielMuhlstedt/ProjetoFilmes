@@ -20,12 +20,12 @@ function fLocalComunicaServidor(){
     },
 		success: function(retorno){
 
-			if(retorno.funcao == "mudarDadosCartao")
+			if(retorno.funcao == "Cartao")
 			{
 				if(retorno.status == "s")
 				{
 					alert(retorno.mensagem);
-          window.location.href = "../pages/main.html";
+          window.location.href = "../pages/main/";
 				}
 				else
 				{

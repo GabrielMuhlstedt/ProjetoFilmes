@@ -45,9 +45,9 @@ $mail->msgHTML($message);
 
 $mail->send();
 
-$retorno2["status"] = "s";
-$retorno2["mensagem"] = "Email Enviado para confirmação.";
-$retorno["funcao"] = "recuperar";
-echo json_encode($retorno2);
+$retorno["status"] = "s";
+//$retorno["mensagem"] = "Email Enviado para confirmação.";
+$retorno["funcao"] = "cadastrar";
+echo json_encode($retorno);
 
  ?>

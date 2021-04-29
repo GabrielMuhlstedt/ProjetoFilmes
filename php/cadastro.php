@@ -20,7 +20,7 @@
 
   $retorno["status"] = "n";
   $retorno["mensagem"] = "Erro no cadastro!";
-  $retorno["funcao"] = "cadastro";
+  $retorno["funcao"] = "cadastrar";
 
   if($resultado_usuario == true){
   		$retorno["status"] = "s";
