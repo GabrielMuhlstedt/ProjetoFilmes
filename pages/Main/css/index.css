@@ -61,23 +61,11 @@ h1 {
     margin: 0;
 }
 
-.lista-filmes {
-    background: rgba(59, 144, 255, 0.918);
-    height: 50vh;
-    display: flex;
+.divFundo{
     width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.lista-filmes .filme{
-   display: inline;
-   margin: auto 1.6vw;
-    overflow: hidden;
-}
-
-.lista-filmes .filme img{
-    height: 38vh;
-    max-width: 20vw;
-    min-width: 12vw;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
 }

@@ -5,6 +5,7 @@
     background: rgb(110, 110, 255);
     transition: 0.5s;
     overflow: hidden;
+    z-index: 999;
 }
 
 .menu:hover, .menu:active{
