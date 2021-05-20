@@ -17,9 +17,11 @@
 		$registro = mysqli_fetch_assoc($resultado);
 
 		$_SESSION["email"] = $registro["email"];
+    $_SESSION["id_usuario"] = $registro["idPessoa"];
 		$_SESSION["inicio"] = time();
-		$_SESSION["tempolimite"] = 15; // 15 segundos
+		$_SESSION["tempolimite"] = 600; // 15 segundos
 		$_SESSION["id"] = session_id();
+
 
 		$retorno["status"] = "s";
 		$retorno["mensagem"] = "Usuario Logado com sucesso";

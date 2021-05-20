@@ -1,6 +1,10 @@
-.lista-filmes {
+.caixa h3{
+    margin-left: 10%;
+}
+
+.listaTitulos {
     background: rgba(59, 144, 255, 0.918);
-    height: 55vh;
+    height: 200%;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -8,7 +12,8 @@
 
 }
 
-.lista-filmes .card {
+.listaTitulos .card {
+    display: block;
     background-color: transparent;
     width: 15vw;
     height: 40vh;
@@ -17,7 +22,7 @@
     z-index: 990;
 }
 
-.lista-filmes .card .filme {
+.listaTitulos .card .filme {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -26,7 +31,7 @@
     border: none;
 }
 
-.lista-filmes .card:hover .filme {
+.listaTitulos .card:hover .filme {
     transform: rotateY(180deg);
 }
 
@@ -47,7 +52,7 @@
     height: 35vh;
 }
 
-.lista-filmes .card .info{
+.listaTitulos .card .info{
     transform: rotateY(180deg);
 
 }
