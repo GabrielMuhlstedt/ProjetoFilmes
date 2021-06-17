@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt-Br" dir="ltr">
   <head>
 
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/confirmaMudarDados.js"></script>
+    <link rel="stylesheet" href="../css/confirmaMudarDados.css">
+    <link rel="stylesheet" href="Main/css/manuLateral.css">
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
 
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    Caso deseje mudar seus dados
-    <form>
-      <input type="text" id="email" placeholder="Digite o seu email">
-    </form>
-    <button type="button" id="bConfirma"name="button"></button>
+
+    <div class="menu">
+
+      <ul>
+          <li>
+              <a href="Main/index.html">
+                  <span class="icone"><i class="fa fa-home" aria-hidden="true"></i></span>
+                  <span class="titulo">início</span>
+              </a>
+          </li>
+
+          <li>
+              <a href="#">
+                  <span class="icone"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
+                  <span class="titulo">Dados Cartão</span>
+              </a>
+          </li>
+          <li>
+            <a href="favoritos.html">
+                <span class="icone"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <span class="titulo">Favoritos</span>
+            </a>
+          </li>
+          <li>
+              <a href="login.html">
+                  <span class="icone"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                  <span class="titulo">Sair</span>
+              </a>
+          </li>
+
+      </ul>
+
+  </div>
+
+    <div class="areaMaior">
+
+      <div class="areaForm">
+
+        <div class="confirmaTituloArea">
+          <h6 class="confirmaTitulo">Caso deseje mudar seus dados</h6>
+        </div>
+
+        <div class="confirmaFormArea">
+          <form class="confirmaForm">
+
+            <input type="text" id="email" placeholder="Digite o seu email" class="confirmaInput">
+
+          </form>
+        </div>
+
+        <div class="confirmaButtonArea">
+          <button type="button" id="bConfirma"name="button" class="confirmaButton">Confirmar</button>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>

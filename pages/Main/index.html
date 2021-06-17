@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +8,13 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/funcoesMain.js"></script>
 
+
     <!-- Bootstrap início -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Bootstrap fim -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-
+    
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/manuLateral.css">
     <link rel="stylesheet" href="css/filmes.css">
@@ -27,40 +26,35 @@
 
     <div class="menu">
 
-        <ul>
+        <ul id="menu">
             <li>
-                <a href="#">
-                    <span class="icone"><i class="fa fa-home" aria-hidden="true"></i></span>
+                <a href="">
+                    <span class="icone"></span>
                     <span class="titulo">início</span>
                 </a>
             </li>
+
             <li>
-                <a href="#">
-                    <span class="icone"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <span class="titulo">Minha conta</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icone"><i class="fa fa-cog" aria-hidden="true"></i></span>
-                    <span class="titulo">Configurações</span>
-                </a>
-            </li>
-            <li>
-                <a href="../../pages/ConfirmaMudarDados.html">
-                    <span class="icone"><i class="fa fa-credit-card-alt" aria-hidden="true"></i></span>
-                    <span class="titulo">Mudança Dados Cartão</span>
+                <a href="../ConfirmaMudarDados.html">
+                    <span class="icone"></span>
+                    <span class="titulo">Dados do Cartão</span>
                 </a>
             </li>
             <li>
               <a href="../favoritos.html">
-                  <span class="icone"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                  <span class="icone"></span>
                   <span class="titulo">Favoritos</span>
               </a>
             </li>
             <li>
+              <a href="../filtros.html">
+                  <span class="icone"></span>
+                  <span class="titulo">Buscar</span>
+              </a>
+            </li>
+            <li>
                 <a href="../login.html">
-                    <span class="icone"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                    <span class="icone"></span>
                     <span class="titulo">Sair</span>
                 </a>
             </li>
@@ -148,5 +142,6 @@
 
 
     <script type="text/javascript" src="js/filmes.js"></script>
+    <script type="text/javascript" src="../../js/admin.js"></script>
 </body>
-</html>s
+</html>

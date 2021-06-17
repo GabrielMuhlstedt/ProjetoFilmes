@@ -6,7 +6,7 @@
   $sql = "select * from filme fi inner join favoritos fv on fi.id = fv.idFilme where fv.idUsuario = $id_usuario";
 
   $resultado = mysqli_query($conexao, $sql);
-
+  $res = [];
   while ($row = mysqli_fetch_object($resultado)) {
     $res[] = $row;
   }

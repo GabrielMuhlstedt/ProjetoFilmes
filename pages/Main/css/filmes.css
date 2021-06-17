@@ -1,15 +1,16 @@
 .lista-filmes {
-    background: rgba(59, 144, 255, 0.918);
-    height: 55vh;
+    background: rgba(25,25,167,0.884);
     display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
     width: 100%;
     justify-content: center;
     align-items: center;
-
 }
 
 .lista-filmes .card {
     background-color: transparent;
+    min-width: 200px;
     width: 15vw;
     height: 40vh;
     perspective: 1000px;
@@ -43,7 +44,7 @@
 
 
 .img img{
-    width: 12vw;
+    width: 85%;
     height: 35vh;
 }
 
@@ -53,6 +54,30 @@
 }
 
 .info{
-    background-color: blueviolet;
+    background-color: rgba(20, 99, 202, 1);
+    color: rgb(0, 0, 153);
+    padding-top: 5%;
+    padding-bottom: 0;
+}
 
+
+.info button{
+
+    background-color: #DCE4FF;
+    color: #8AAEF4;
+    border: none;
+    border-radius: 10%;
+    margin: 15px 4px 0 0;
+}
+
+.modalConfig {
+    background-color: rgba(20, 99, 202, 1);
+    color:rgb(0, 0, 153);
+    text-align: center;
+}
+
+.modalFechar {
+    background-color: rgb(103, 103, 204);
+    border: none;
+    color: rgb(0, 0, 153);
 }

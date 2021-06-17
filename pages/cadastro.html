@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 <head>
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/funcoesCadastro.js"></script>
@@ -24,47 +24,47 @@
 
             <div class="cadastro-metade">
 
-                <div class="input-box">
+                <div class="input-box" id="box-nome">
                     <input type="text" name="nome" id ="nome" placeholder="Nome" required maxlength="50">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-dataNasc">
                     <input type="text" name="dataNascimento" id ="data_nascimento" placeholder="Data de Nascimento DD/MM/AAAA" required maxlength="10">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-email">
                     <input type="email" name="email" id ="email" placeholder="Email" required maxlength="30">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-senha">
                     <input type="password" name="senha" id="senha" placeholder="Senha" required maxlength="30">
                     <!--<input type="hidden" name="senha_hash" id="senha_hash" />-->
                 </div>
 
-                <div class="input-box">
-                    <input type="password" placeholder="Confirmar Senha" required maxlength="30">
+                <div class="input-box" id="box-ConfSenha">
+                    <input type="password" placeholder="Confirmar Senha" id="ConfSenha" required maxlength="30">
                 </div>
             </div>
 
             <div class="cadastro-metade">
 
-                <div class="input-box">
+                <div class="input-box" id="box-numCartao">
                     <input type="text" name="numCartao" id ="numCartao" placeholder="Número do Cartão" required maxlength="30">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-valCartao">
                     <input type="text" name="valCartao" id ="valCartao" placeholder="Validade do Cartão MM/AA" required maxlength="6">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-codSeg">
                     <input type="text" name="codSeg" id ="codSeg" placeholder="Código de Segurança" required maxlength="3">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-nomeTitular">
                     <input type="text" name="nomeTitular" id ="nomeTitular" placeholder="Nome do Titular" required maxlength="50">
                 </div>
 
-                <div class="input-box">
+                <div class="input-box" id="box-cpfCnpj">
                     <input type="text" name="cpfCnpj" id ="cpfCnpj" placeholder="CPF/CNPJ" required maxlength="20">
                 </div>
 
@@ -72,7 +72,7 @@
 
             <div id="btn-box">
 
-                <button type="button" name="bCadastrar" id ="bCadastrar">Cadastrar</button>
+                <button type="button" name="bCadastrar" id ="bCadastrar" >Cadastrar</button>
             </div>
 
         </form>

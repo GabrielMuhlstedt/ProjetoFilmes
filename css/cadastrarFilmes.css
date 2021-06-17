@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/background_Config.jpg) fixed center no-repeat;
+    background-size: cover;
+}
+
+
+.areaMaior {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaForm {
+    text-align: center;
+    background-color: rgba(24, 186, 207, 0.7);
+    border: black solid 1px;
+    width: 40%;
+    min-width: 250px;
+    min-height: 180px;
+
+
+    padding: 25px;
+    border-radius: 15%;
+}
+
+.confirmaTituloArea {
+    display: block;
+}
+
+.confirmaTituloArea .confirmaTitulo {
+    font-size: large;
+    font-weight: 900;
+    margin: 10px;
+
+}
+
+.formArea {
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.formArea .input-box {
+    margin: 10px;
+    margin-left: 0;
+    padding: 1.5%;
+    width: 70%;
+    height: 5vh;
+}
+
+#imagem {
+    width: 85%;
+}
+
+.filmeCadastrar {
+    display: block;
+}
+
+.filmeCadastrar .cadastraFilme {
+    width: 60%;
+    background-color: #DCE4FF;
+    color: #8AAEF4;
+    padding: 1%;
+    border-radius: 2px;
+    border: none;
+    font-size: 20px;
+}

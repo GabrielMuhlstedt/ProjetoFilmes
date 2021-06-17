@@ -5,22 +5,71 @@
     <script type="text/javascript" src="../js/jquery.md5.js"></script>
     <script type="text/javascript" src="../js/sjcl.js"></script>
 
+    <link rel="stylesheet" href="../css/mudarSenha.css">
+    <link rel="stylesheet" href="Main/css/manuLateral.css">
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-    <form>
-      <div class="input-box">
-          <input type="password" name="senha" id="senha"placeholder="Digite sua nova senha" required maxlength="30">
-          <!--<input type="hidden" name="senha_hash" id="senha_hash" />-->
+
+
+    <div class="menu">
+
+      <ul>
+
+          <li>
+              <a href="login.html">
+                  <span class="icone"><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+                  <span class="titulo">Voltar</span>
+              </a>
+          </li>
+
+      </ul>
+
+  </div>
+
+  <div class="areaMaior">
+
+    <div class="areaForm">
+
+      <div class="confirmaTituloArea input-box">
+        <h6 class="confirmaTitulo">Mudar Senha</h6>
       </div>
 
-      <div class="input-box">
-          <input type="password" placeholder="Confirmar Senha" required maxlength="30">
+      <div class="confirmaFormArea input-box" id="box-senha">
+
+          <input type="password" name="senha" id="senha" placeholder="Digite sua nova senha" required maxlength="30" class="confirmaInput">
+
       </div>
 
-      <input type="text" id ="tokenSenha" name="tokenSenha" placeholder="Digite seu token de recuperação">
-    </form>
-      <button type="button" name="bSenha" id ="bSenha"></button>
+      <div class="confirmaFormArea input-box" id="box-ConfSenha">
+
+        <input type="password" name="senha" id="ConfSenha"placeholder="Confirme sua nova senha" required maxlength="30" class="confirmaInput">
+
+    </div>
+
+      <div class="confirmaFormArea input-box">
+
+        <input type="text" id ="tokenSenha" name="tokenSenha" placeholder="Digite seu token de recuperação" class="confirmaInput">
+
+      </div>
+
+
+        <div class="confirmaButtonArea">
+          <button type="button" name="bSenha" id ="bSenha" class="confirmaButton">Confirmar</button>
+        </div>
+    </div>
+
+  </div>
+
+
+
   </body>
 </html>

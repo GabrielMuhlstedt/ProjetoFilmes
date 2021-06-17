@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/cadastrarFilmes.css">
+    <link rel="stylesheet" href="Main/css/manuLateral.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cadastrarFilmes.js"></script>
+
+</head>
+<body>
+
+    <div class="menu">
+
+        <ul>
+            <li>
+                <a href="Main/index.html">
+                    <span class="icone"></span>
+                    <span class="titulo">início</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="ConfirmaMudarDados.html">
+                    <span class="icone"></span>
+                    <span class="titulo">Dados do Cartão</span>
+                </a>
+            </li>
+            <li>
+              <a href="favoritos.html">
+                  <span class="icone"></span>
+                  <span class="titulo">Favoritos</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                  <span class="icone"></span>
+                  <span class="titulo">Buscar</span>
+              </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <span class="icone"></span>
+                    <span class="titulo">Sair</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="areaMaior">
+
+        <div class="areaForm">
+            <div class="confirmaTituloArea">
+                <h6 class="confirmaTitulo">Caso deseje mudar seus dados</h6>
+            </div>
+
+            <div class="formArea">
+                <form id="filmeForm">
+
+                    <div>
+
+                        <div class="filmeTitulo">
+                            <input type="text" id="titulo" required placeholder="Título do Filme" class="input-box" name="titulo">
+                        </div>
+
+                        <div class="filmeGenero">
+                            <input type="text" id="genero" required placeholder="Gênero do Filme" class="input-box" name="genero">
+                        </div>
+
+                        <div class="filmAno">
+                            <input type="number" id="ano" required placeholder="Ano de Lançamento" class="input-box" name="ano">
+                        </div>
+
+                        <div class="filmeDuracao">
+                            <input type="text" id="duracao" required placeholder="Duração do Filme" class="input-box" name="duracao">
+                        </div>
+
+                        <div class="filmeRelevancia">
+                            <input type="number" id="relevancia" required placeholder="Relevância do Filme" class="input-box" name="relevancia">
+                        </div>
+
+                        <div class="filmeSinopse">
+                            <input type="text" id="sinopse" required placeholder="Sinopse do Filme" class="input-box" name="sinopse">
+                        </div>
+
+                        <div class="filmeTrailer">
+                            <input type="text" id="trailer" required placeholder="trailer do Filme" class="input-box" name="trailer">
+                        </div>
+
+                        <div class="filmeImagem">
+                            <input type="file" id="upload-image-filmes" required placeholder="Imagem do Filme" class="input-box" name="imagem">
+                        </div>
+
+                        <div class="filmeSerie">
+                            <input type="text" id="filmeSerie" required placeholder="É um filme ou série" class="input-box" name="filmeSerie">
+                        </div>
+
+                        <div class="filmeCadastrar">
+                            <button class="cadastraFilme" id ="bEnviar"> Cadastrar </button>
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -19,45 +19,45 @@ body, html {
 .filmeAcao {
     background: url(../imagens/backgroundFilmeAcao.jpg) no-repeat fixed center;
     background-size: cover;
-    
+
 }
 
 .filmeDrama {
     background-image: url(../imagens/backgroundFilmeDrama.jpg);
-   
+
 }
 
 .filmeRomance {
     background-image: url(../imagens/backgroundFilmeRomance.jpg);
-    
+
 }
 
 .filmeComedia {
     background-image: url(../imagens/backgroundFilmeComedia.jpg);
-    
+
 }
 
 .filmeHerois {
     background-image: url(../imagens/backgroundFilmeHerois.jpeg);
-    
+
 }
 
 .filmeFantasia {
     background-image: url(../imagens/backgroundFilmeFantasia.jpg) ;
-    
+
 }
 
 .titulo-genero{
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(25, 25, 167, 0.35);
     position: absolute;
-    color: blue;
-    font-size: 25px;
-    padding: 18px;
-    letter-spacing: 5px;
-    border-radius: 35%;
+    color: rgb(176, 176, 255);
+    padding: 10px;
+    border-radius: 30%;
 }
 
 h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
     margin: 0;
 }
 

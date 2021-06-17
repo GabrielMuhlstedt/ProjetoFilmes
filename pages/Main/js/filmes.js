@@ -11,7 +11,7 @@ function formarFilmes(filmes){
 
 
 
-    for(var i = 0; i < contFilme; i++){
+    for(var i = 0; i < filmes.length; i++){
 
         console.log("Logs dentro do FOR")
 
@@ -77,7 +77,7 @@ function construirCard(lista, filme){
         divFilme.appendChild(capa);
 
         let img = document.createElement('img');
-        img.src = filme["Imagens"]
+        img.src = "../../images/" + filme["Imagens"];
         capa.appendChild(img);
 
         let info = document.createElement('div');
@@ -106,12 +106,10 @@ function preencher(filme, info){
 
     console.log("Preenchendo card de " + filme["Titulo"])
 
-    let html = "Título: " + filme["Titulo"];
+    let html = "<h6>" + filme["Titulo"] + "</h6>";
     html += "<br>Gênero: " + filme["Genero"];
     html += "<br>Ano: " + filme["Ano"];
     html += "<br>Duração: " + filme["Duracao"];
-    html += "<br>"
-    html += "<br>"
     html += "<br>"
 
 
@@ -128,10 +126,10 @@ function mostrarModal(filme){
 
     let html = "<div class='modal-dialog' role='document'>";
     html += "<div class='modal-content'>";
-    html += "<div class='modal-body' id='modal_conteudo'>";
+    html += "<div class='modal-body modalConfig' id='modal_conteudo'> ";
 
     html += "</div>";
-    html += "<button onclick='fecharModal()'>Fechar</button>";
+    html += "<button onclick='fecharModal()'class='modalFechar'>Fechar</button>";
     html += "</div>";
     html += "</div>";
     html += "<div class='divFundo'></div>";

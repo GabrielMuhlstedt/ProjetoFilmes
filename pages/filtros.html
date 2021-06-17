@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="Main/js/jquery.js"></script>
+
+    <!-- Bootstrap início -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link rel="stylesheet" href="Main/css/manuLateral.css">
+    <link rel="stylesheet" href="../css/filtros.css">
+    <link rel="stylesheet" href="../css/filmesFiltrados.css">
+
+
+
+
+    <title>Buscar - AquaFilmes</title>
+</head>
+<body >
+
+    <div class="menu">
+
+        <ul>
+            <li>
+                <a href="Main/index.html">
+                    <span class="icone"></span>
+                    <span class="titulo">início</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="ConfirmaMudarDados.html">
+                    <span class="icone"></span>
+                    <span class="titulo">Dados do Cartão</span>
+                </a>
+            </li>
+            <li>
+              <a href="favoritos.html">
+                  <span class="icone"></span>
+                  <span class="titulo">Favoritos</span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                  <span class="icone"></span>
+                  <span class="titulo">Buscar</span>
+              </a>
+            </li>
+            <li>
+                <a href="login.html">
+                    <span class="icone"></span>
+                    <span class="titulo">Sair</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+
+    <div class="principalArea">
+        <div class="filtroArea" id="filtroArea">
+
+            <div>
+                <div class="filtroTitulo filtroInput">
+
+                    <input type="text" class="filtro" placeholder="Título" name="filtroTitulo" id="filtroTitulo">
+
+                </div>
+
+                <div class="filtroGenero filtroInput">
+
+                    <select name="filtroGenero" class="filtro" id="filtroGenero">
+                        <option value="">Gênero</option>
+                        <option value="Acao">Ação</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Comedia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Fantasia">Fantasia</option>
+                        <option value="Herois">Herói</option>
+                    </select>
+
+                </div>
+
+                <div class="filtroAno filtroInput">
+
+                    <select name="filtroAno" class="filtro" id="filtroAno">
+                        <option value="">Ano</option>
+                        <option value="1997">1997</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+
+                </div>
+
+
+
+                <div class="filtroRelevancia filtroInput">
+
+                    <select name="filtroRelevancia" id="filtroRelevancia" class="filtro" aria-placeholder="Relevância">
+                        <option value="">Relevância</option>
+                        <option value="1">0 - 1</option>
+                        <option value="2">1 - 2</option>
+                        <option value="3">2 - 3</option>
+                        <option value="4">3 - 4</option>
+                        <option value="5">4 - 5</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="btnArea">
+                <div class="btnFiltrar col-md-2 d-flex justify-content-end">
+                    <button onclick="pegarFiltros()" onkeypress="" type="button" class="btn btn-primary">
+                      <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="filmesFiltrados" id="filmesArea">
+
+
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    </div>
+
+    <script type="text/javascript" src="../js/filtro.js"></script>
+
+
+</body>
+</html>

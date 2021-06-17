@@ -33,14 +33,28 @@ body {
     width: 35%;
 }
 
-.input-box input{
+.input-box {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.input-box-erro {
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border: red solid 1px;
+}
+
+input{
     width: 100%;
     background-color: #8AAEF4;
-    margin-bottom: 10px;
     border: none;
     padding: 2%;
     font-size: 13px;
 }
+
+
 
 
 #btn-box button{

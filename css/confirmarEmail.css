@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.areaMaior {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/background_Config.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+.areaForm {
+    text-align: center;
+    background-color: rgba(24, 186, 207, 0.7);
+    border: black solid 1px;
+    min-width: 280px;
+    min-height: 220px;
+    padding: 25px;
+    border-radius: 15%;
+}
+
+
+.confirmaTituloArea {
+    display: block;
+}
+
+.confirmaTituloArea .confirmaTitulo {
+    font-size: large;
+    font-weight: 900;
+    margin: 15px;
+
+}
+
+.confirmaFormArea {
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.confirmaFormArea .confirmaInput {
+    margin: 15px;
+    margin-left: 0;
+    padding: 1.5%;
+    width: 100%;
+
+}
+
+.confirmaButtonArea {
+    display: block;
+}
+
+.confirmaButtonArea .confirmaButton {
+    width: 60%;
+    background-color: #DCE4FF;
+    color: #8AAEF4;
+    padding: 1%;
+    border-radius: 2px;
+    border: none;
+    font-size: 20px;
+}

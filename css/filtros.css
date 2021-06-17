@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+body {
+    background: url(../images/background_filtros.jpg) fixed repeat center;
+    background-size: cover;
+
+}
+
+
+.principalArea{
+    background-color: rgb(5, 43, 211);
+}
+
+.filtroArea{
+
+    display: flex;
+    width: 38.5%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.filtro {
+    background-color: rgb(172, 220, 252);
+    width: 30vw;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+    height: 6vh;
+    min-height: 30px;
+}
+
+
+
+.btnFiltrar{
+    margin-top: 23.5vh;
+    margin-bottom: 0;
+}
+
+
+#filmesArea {
+    max-width: 100vw;
+    padding: 50px;
+}
